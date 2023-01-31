@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>List_of_fishemen</title>
+    <link rel="stylesheet" href="static/css/bootstrap.min.css">
+    <style>
+        body{
+            
+            
+            
+        }
+     </style>
+</head>
+<body>
+    <table border="1" class="table table-bordered ">
+        <tr>
+            <th>Fishermen Name</th>
+            <th>Vehicle Name</th>
+            <th>Fishermen Phonenumber</th>
+            <th>Fishermen Address</th>
+        </tr>
+        {%for fishermen in fishermen%}
+        <tr>
+            <td>{{fishermen.Fname}}</td>
+            <td>{{fishermen.Vname}}</td>
+            <td>{{fishermen.Fphone}}</td>
+            <td>{{fishermen.Faddress}}</td>
+        </tr
+        {% endfor %}
+
+    </table>
+    <button><a href="fisherRegisration">Add Fishermen</a> </button>
+
+    
+</body>
+</html>
